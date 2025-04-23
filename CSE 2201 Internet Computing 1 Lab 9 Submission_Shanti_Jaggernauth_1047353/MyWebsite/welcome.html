@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+
+    <title>Welcome Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html"> Home</a> | <a href="about.html"> About</a> |
+      <a href="gallery.html"> Gallery</a>| <a href="contact.html"> Contact</a>|
+      <a href="welcome.html"> Welcome Page</a>
+    </nav>
+
+    <h2 id="welcomeMessage">Welcome To My Webpage!</h2>
+
+    <script>
+      const storedName = localStorage.getItem("contactName");
+
+      if (storedName) {
+        document.getElementById(
+          "welcomeMessage"
+        ).textContent = `Welcome back, ${storedName}!`;
+      } else {
+        document.getElementById("welcomeMessage").textContent =
+          "Welcome, guest!";
+      }
+    </script>
+  </body>
+</html>
