@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+
+    <style>
+      #galleryImage {
+        opacity: 0;
+        transition: opacity 2s;
+      }
+    </style>
+
+    <title>Gallery</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html"> Home</a> | <a href="about.html"> About</a> |
+      <a href="gallery.html"> Gallery</a>| <a href="contact.html"> Contact</a>|
+      <a href="welcome.html"> Welcome Page</a>
+    </nav>
+
+    <h1>My Gallery</h1>
+
+    <!-- <div class="container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+      </div> -->
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <img
+          id="hoverImg"
+          src="images/pic1.jpg"
+          alt="Image 1"
+          width="250"
+          height="200"
+        />
+        <p>A beautiful bouquet of peonies</p>
+        <br />
+      </div>
+      <div class="grid-item">
+        <img src="images/pic2.jpg" alt="Image 2" width="250" height="200" />
+        <p>Breathtaking hydrangeas</p>
+        <br />
+      </div>
+      <div class="grid-item">
+        <img src="images/pic3.jpg" alt="Image 3" width="250" height="200" />
+        <p>A single Chrysanthemum</p>
+      </div>
+
+      <div class="grid-item">
+        <img
+          id="galleryPic"
+          src="images/pic4.jpg"
+          alt="Image 4"
+          width="250"
+          height="200"
+        />
+        <p>White flowers</p>
+      </div>
+
+      <div class="grid-item">
+        <img
+          id="galleryImage"
+          src="images/pic5.jpg"
+          alt="Image 5"
+          width="250"
+          height="200"
+        />
+        <p>Pink roses</p>
+      </div>
+
+      <script>
+        window.onload = function () {
+          var image = document.getElementById("galleryImage");
+          image.style.opacity = "1";
+        };
+      </script>
+
+      <div class="grid-item">
+        <img src="images/pic6.jpg" alt="Image 6" width="250" height="200" />
+        <p>Red roses</p>
+      </div>
+    </div>
+
+    <footer>
+      <small>
+        <p>
+          Author: Shanti Jaggernauth<br />
+          <a href="shantijagger1234@gmail.com"> shantijagger1234@gmail.com</a>
+        </p>
+      </small>
+    </footer>
+  </body>
+</html>
